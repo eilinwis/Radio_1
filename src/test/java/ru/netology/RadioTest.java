@@ -27,6 +27,7 @@ class RadioTest {
         int actual = radio.increaseVolume(currentVolume);
         assertEquals(expected, actual);
     }
+
     @Test
     void increaseVolume2() {
         Radio radio = new Radio();
@@ -35,28 +36,32 @@ class RadioTest {
         int actual = radio.increaseVolume(currentVolume);
         assertEquals(expected, actual);
     }
+
     @Test
-    void decreaseVolume (){
+    void decreaseVolume() {
         Radio radio = new Radio();
         int currentVolume = 7;
         int expected = 6;
         int actual = radio.decreaseVolume(currentVolume);
         assertEquals(expected, actual);
     }
+
     @Test
-    void decreaseVolume2 (){
+    void decreaseVolume2() {
         Radio radio = new Radio();
         int currentVolume = 0;
         int expected = 0;
         int actual = radio.decreaseVolume(currentVolume);
         assertEquals(expected, actual);
     }
+
     @Test
-    void setCurrentStation(){
+    void setCurrentStation() {
         Radio radio = new Radio();
         int currentstation = 12;
-        assertEquals(9,radio.setCurrentStation(currentstation));
+        assertEquals(9, radio.setCurrentStation(currentstation));
     }
+
     @Test
     void increaseStation() {
         Radio radio = new Radio();
@@ -65,6 +70,7 @@ class RadioTest {
         int actual = radio.increaseStation(currentStation);
         assertEquals(expected, actual);
     }
+
     @Test
     void increaseStation2() {
         Radio radio = new Radio();
@@ -73,16 +79,18 @@ class RadioTest {
         int actual = radio.increaseStation(currentStation);
         assertEquals(expected, actual);
     }
+
     @Test
-    void decreaseStation (){
+    void decreaseStation() {
         Radio radio = new Radio();
         int currentStation = 0;
         int expected = 9;
         int actual = radio.decreaseStation(currentStation);
         assertEquals(expected, actual);
     }
+
     @Test
-    void decreaseStation2 (){
+    void decreaseStation2() {
         Radio radio = new Radio();
         int currentStation = 4;
         int expected = 3;

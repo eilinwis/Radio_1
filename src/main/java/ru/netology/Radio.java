@@ -10,34 +10,6 @@ public class Radio {
     public int currentVolume;
     public boolean on;
 
-//    public String getName() {
-//        return name;
-//    }
-//
-//    public void setName(String name) {
-//        this.name = name;
-//    }
-//
-//    public int getMaxStation() {
-//        return maxStation;
-//    }
-//
-//    public void setMaxStation(int maxStation) {
-//        this.maxStation = maxStation;
-//    }
-//
-//    public int getMinStation() {
-//        return minStation;
-//    }
-//
-//    public void setMinStation(int minStation) {
-//        this.minStation = minStation;
-//    }
-//
-//    public int getCurrentStation() {
-//        return currentStation;
-//    }
-
     public int setCurrentStation(int currentStation) {
         if (currentStation >= maxStation) {
             return maxStation;
@@ -73,25 +45,6 @@ public class Radio {
         return position;
     }
 
-//    public int getMaxVolume() {
-//        return maxVolume;
-//    }
-//
-//    public void setMaxVolume(int maxVolume) {
-//        this.maxVolume = maxVolume;
-//    }
-//
-//    public int getMinVolume() {
-//        return minVolume;
-//    }
-//
-//    public void setMinVolume(int minVolume) {
-//        this.minVolume = minVolume;
-//    }
-//
-//    public int getCurrentVolume() {
-//        return currentVolume;
-//    }
 
     public int setCurrentVolume(int currentVolume) {
 
@@ -121,20 +74,9 @@ public class Radio {
         int level = currentVolume;
         if (currentVolume > minVolume) {
             level--;
-        }else {
+        } else {
             level = minVolume;
         }
         return level;
     }
-// if (currentStation == minStation) {
-//            position = maxStation;
-//        } else {
-//            position--;
-//    public boolean isOn() {
-//        return on;
-//    }
-//
-//    public void setOn(boolean on) {
-//        this.on = on;
-//    }
 }
