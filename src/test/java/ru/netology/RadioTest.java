@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class RadioTest {
-   Radio radio = new Radio();
+    Radio radio = new Radio();
 
     @Test
     public void ShouldSetVolume() {
@@ -53,6 +53,7 @@ class RadioTest {
         radio.decreaseVolume();
         assertEquals(0, radio.getCurrentVolume());
     }
+
     @Test
     public void shouldSetStation() {
         Radio radio = new Radio(32);
@@ -65,6 +66,7 @@ class RadioTest {
         radio.setCurrentStation(13);
         assertEquals(0, radio.getCurrentStation());
     }
+
     @Test
     public void shouldSetStationAboveMaxConstructor() {
         Radio radio = new Radio(32);
@@ -77,6 +79,7 @@ class RadioTest {
         radio.setCurrentStation(-1);
         assertEquals(10, radio.getCurrentStation());
     }
+
     @Test
     public void shouldSetStationBelowMinConstructor() {
         Radio radio = new Radio(32);
@@ -100,6 +103,7 @@ class RadioTest {
         radio.increaseStation();
         assertEquals(0, radio.getCurrentStation());
     }
+
     @Test
     public void increaseStationAboveMaxConstructor() {
         Radio radio = new Radio(32);
@@ -122,6 +126,7 @@ class RadioTest {
         radio.decreaseStation();
         assertEquals(10, radio.getCurrentStation());
     }
+
     @Test
     public void decreaseStationBelowMinConstructor() {
         Radio radio = new Radio(32);
