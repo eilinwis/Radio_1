@@ -1,21 +1,18 @@
 package ru.netology;
 
-import lombok.AllArgsConstructor;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-
 public class Radio {
-    String name;
     public int maxStation = 10;
     public int minStation = 0;
     public int currentStation;
     public int maxVolume = 100;
     public int minVolume = 0;
     public int currentVolume;
-    public boolean on;
 
     public Radio(int maxStation) {
         this.maxStation = maxStation;
